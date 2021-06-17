@@ -86,6 +86,9 @@ return [
         'viewpage' => [
             'packagePath' => 'typo3/sysext/viewpage/',
         ],
+        'demo_typo3' => [
+            'packagePath' => 'typo3conf/ext/demo_typo3/',
+        ],
     ],
     'version' => 5,
 ];
