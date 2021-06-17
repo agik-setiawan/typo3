@@ -1,21 +1,40 @@
-<ul>
-    <f:for each="{mainnavigation}" as="mainnavigationItem">
-        <li class="{f:if(condition: mainnavigationItem.active, then:'active')}">
-            <a href="{mainnavigationItem.link}" target="{mainnavigationItem.target}" title="{mainnavigationItem.title}">
-                {mainnavigationItem.title}
-            </a>
-            <f:if condition="{mainnavigationItem.children}">
-                <ul>
-                    <f:for each="{mainnavigationItem.children}" as="child">
-                        <li class="{f:if(condition: child.active, then:'active')}">
-                            <a href="{child.link}" target="{child.target}" title="{child.title}">
-                                {child.title}
-                            </a>
-                        </li>
-                    </f:for>
-                </ul>
-            </f:if>
-        </li>
-    </f:for>
-</ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/">Belajar Typo3</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <f:for each="{mainnavigation}" as="mainnavigationItem">
+
+                    <f:if condition="{mainnavigationItem.children}">
+                        <f:then>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    {mainnavigationItem.title}
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <f:for each="{mainnavigationItem.children}" as="children">
+                                        <li><a class="dropdown-item" href="{children.link}">{children.title}</a></li>
+                                    </f:for>
+                                </ul>
+                            </li>
+                        </f:then>
+                        <f:else>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="{mainnavigationItem.link}">{mainnavigationItem.title}</a>
+                            </li>
+                        </f:else>
+                    </f:if>
+
+                </f:for>
+            </ul>
+        </div>
+    </div>
+</nav>
 <f:render section="Main" />
