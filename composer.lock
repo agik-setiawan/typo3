@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f666a6017edd827c156a6581951952ec",
+    "content-hash": "e221904b8e64fc8727916c59e3de18fe",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -692,6 +692,82 @@
                 }
             ],
             "time": "2020-12-29T14:50:06+00:00"
+        },
+        {
+            "name": "georgringer/news",
+            "version": "8.5.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/georgringer/news.git",
+                "reference": "24ddcb09ab7a566a3bc19bea5cb80d78ad673951"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/georgringer/news/zipball/24ddcb09ab7a566a3bc19bea5cb80d78ad673951",
+                "reference": "24ddcb09ab7a566a3bc19bea5cb80d78ad673951",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^9.5.17 || ^10.4.12"
+            },
+            "conflict": {
+                "symfony/finder": "2.7.44 || 2.8.37 || 3.4.7 || 4.0.7"
+            },
+            "replace": {
+                "typo3-ter/news": "self.version"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "^2.1"
+            },
+            "suggest": {
+                "reelworx/rx-shariff": "^12 || ^13"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "news",
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GeorgRinger\\News\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Georg Ringer",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Versatile news extension, based on extbase & fluid for TYPO3 CMS",
+            "homepage": "https://ringer.it",
+            "keywords": [
+                "article",
+                "extension",
+                "news",
+                "typo3"
+            ],
+            "support": {
+                "issues": "https://github.com/georgringer/news/issues",
+                "source": "https://github.com/georgringer/news/tree/8.5.2"
+            },
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/GeorgRinger/10",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.patreon.com/georgringer",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-01-12T17:46:50+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -6432,5 +6508,5 @@
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.1.0"
 }
