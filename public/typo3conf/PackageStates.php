@@ -89,6 +89,9 @@ return [
         'demo_typo3' => [
             'packagePath' => 'typo3conf/ext/demo_typo3/',
         ],
+        'news' => [
+            'packagePath' => 'typo3conf/ext/news/',
+        ],
     ],
     'version' => 5,
 ];

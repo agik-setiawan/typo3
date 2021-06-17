@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e221904b8e64fc8727916c59e3de18fe",
+    "content-hash": "172fa4da47b7d2120d340ac9d18cac7c",
     "packages": [
         {
             "name": "cogpowered/finediff",
@@ -969,6 +969,57 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.8.2"
             },
             "time": "2021-04-26T09:17:50+00:00"
+        },
+        {
+            "name": "netresearch/rte-ckeditor-image",
+            "version": "10.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/netresearch/t3x-rte_ckeditor_image.git",
+                "reference": "5e50283cbd5d5218e99bae2f484e28058f56c8e6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/netresearch/t3x-rte_ckeditor_image/zipball/5e50283cbd5d5218e99bae2f484e28058f56c8e6",
+                "reference": "5e50283cbd5d5218e99bae2f484e28058f56c8e6",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "^10.2"
+            },
+            "replace": {
+                "netresearch/rte-ckeditor-image": "self.version",
+                "typo3-ter/rte-ckeditor-image": "self.version"
+            },
+            "require-dev": {
+                "namelesscoder/typo3-repository-client": "^1.2"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "10.x-dev"
+                },
+                "typo3/cms": {
+                    "cms-package-dir": "{$vendor-dir}/typo3/cms",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Netresearch\\RteCKEditorImage\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Image support in CKEditor for the TYPO3 ecosystem",
+            "homepage": "https://www.netresearch.de",
+            "support": {
+                "issues": "https://github.com/netresearch/t3x-rte_ckeditor_image/issues",
+                "source": "https://github.com/netresearch/t3x-rte_ckeditor_image/tree/10.1.0"
+            },
+            "time": "2020-12-23T21:18:22+00:00"
         },
         {
             "name": "nikic/php-parser",
